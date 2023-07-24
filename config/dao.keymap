@@ -33,11 +33,14 @@
     combos {
         compatible = "zmk,combos";
 
-        esc_combo {
+        new_combo {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20>;
+        };
+
+        new_combo {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
-            layers = <0>;
-            timeout-ms = <50>;
+            key-positions = <13 14>;
         };
     };
 
