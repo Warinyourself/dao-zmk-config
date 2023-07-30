@@ -33,12 +33,12 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
+        RightEnter {
             bindings = <&kp ENTER>;
             key-positions = <19 20>;
         };
 
-        new_combo {
+        LeftEscape {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
         };
