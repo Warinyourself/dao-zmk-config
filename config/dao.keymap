@@ -42,6 +42,16 @@
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
         };
+
+        CtrlShiftTab {
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <2 1>;
+        };
+
+        CtrlTab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <3 4>;
+        };
     };
 
     keymap {
