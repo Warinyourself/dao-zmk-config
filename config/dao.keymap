@@ -69,17 +69,27 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
+        
+        bmt: balanced_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BALANCED_MOD_TABS";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
-
+ 
         default_layer {
             bindings = <
    &mt TAB RBKT           &kp Q           &kp W             &kp E               &kp R           &kp T         &kp Y                &kp U         &kp I           &kp O                   &kp P       &kp LBKT
 &mt LSHFT GRAVE  &hr LGUI A  &hr LALT S  &hr LSHIFT D  &hr LCTRL F           &kp G         &kp H   &hr LCTRL J  &hr LSHIFT K  &hr LALT L  &hr LGUI SEMICOLON  &mt RCTRL SQT
 &mt LCTRL MINUS           &kp Z           &kp X             &kp C               &kp V           &kp B         &kp N                &kp M     &kp COMMA         &kp DOT                &kp FSLH  &mt RALT BSLH
-                                                            &sl 2           &hr LCTRL SPACE  &mt LWIN ENTER  &mt LALT TAB  &mt RSHFT BACKSPACE     &lt 1 DEL
+                                                            &sl 2           &bmt LCTRL SPACE  &mt LWIN ENTER  &mt LALT TAB  &mt RSHFT BACKSPACE     &lt 1 DEL
             >;
         };
 
