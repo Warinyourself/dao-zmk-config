@@ -76,7 +76,7 @@
             label = "BALANCED_MOD_TABS";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <300>;
             bindings =
                 <&kp>,
