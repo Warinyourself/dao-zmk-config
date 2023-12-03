@@ -13,14 +13,6 @@ Visual representation of the default keymap in keyboard-layout-editor: [KLE](htt
 
 This layout is heavily inspired by [this](https://github.com/aroum/Watchman-layouts)
 
-### Dao44
-
-Visual representation of the default keymap in keyboard-layout-editor: [KLE](http://www.keyboard-layout-editor.com/#/gists/c6ba0634e5b92366be9f324775394e66)
-
-This layout is heavily inspired by [this](https://github.com/KGOH/Jian-Info)
-
-Because of current ZMK limitations, Dao44 keymap is in the branch [dao44](https://github.com/yumagulovrn/dao-zmk-config/tree/dao44)
-
 ## FAQ
 
 - [FAQ](#faq)
@@ -55,6 +47,21 @@ Because of current ZMK limitations, Dao44 keymap is in the branch [dao44](https:
 1. Turn off the power for both halves (move slider to position `OFF`)
 2. Turn on the power for both halves (move slider to position `ON`)
 3. Press `RESET` button **once** on both halves **simultaneously**
+
+---
+
+Pull submodules.
+```bash
+git submodule update --init --recursive
+```
+
+```bash
+git submodule update --remote --merge
+```
+
+---
+
+
 
 ### Problems
 
