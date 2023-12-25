@@ -52,11 +52,6 @@ ZMK_UNICODE_SINGLE(sqrt_sign,  N2, N2, N1,  A) // Square root √
     combos {
         compatible = "zmk,combos";
 
-        LeftEnter {
-            bindings = <&kp ENTER>;
-            key-positions = <16 15>;
-        };
-
         LeftEscape {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
@@ -116,17 +111,17 @@ ZMK_UNICODE_SINGLE(sqrt_sign,  N2, N2, N1,  A) // Square root √
             bindings = <
 &kp F1     &kp F2             &kp F3             &kp F4               &kp F5              &kp F6        &kp F7        &kp F8              &kp F9               &kp F10            &kp F11            &kp F12
 &kp PLUS   &hr LGUI NUMBER_1  &hr LALT NUMBER_2  &hr LSHIFT NUMBER_3  &hr LCTRL NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &hr LCTRL NUMBER_7  &hr LSHIFT NUMBER_8  &hr LALT NUMBER_9  &hr LGUI NUMBER_0  &kp MINUS
-&kp EQUAL  &kp EXCL           &kp AT             &kp HASH             &kp DLLR            &kp PRCNT     &kp CARET     &kp AMPS            &kp STAR             &kp LPAR           &kp RPAR           &kp RALT
+&kp EQUAL  &kp EXCL           &kp AT             &kp HASH             &kp DLLR            &kp PRCNT     &kp CARET     &kp AMPS            &kp STAR             &kp LPAR           &kp RPAR           &trans
                                                  &trans               &trans              &trans        &trans        &trans              &trans
             >;
         };
 
         FN-LAYER {
             bindings = <
-&kp KP_NUM  &kp KP_SLASH            &kp KP_N7         &kp KP_N8         &kp KP_N9           &kp KP_MINUS     &kp C_VOL_UP     &kp HOME    &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
-&kp EQUAL   &hr LGUI KP_MULTIPLY    &hr LALT KP_N4    &hr LSHIFT KP_N5  &hr LCTRL KP_N6     &kp KP_PLUS      &kp C_MUTE       &kp LEFT    &kp UP     &kp RIGHT  &kp INS          &kp K_APP
-&kp LALT    &kp KP_N0               &kp KP_N1         &kp KP_N2         &kp KP_N3           &kp KP_DOT       &kp C_VOL_DN     &kp END     &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
-                                                      &trans            &trans              &trans           &trans           &trans      &trans
+&kp KP_NUM  &kp KP_SLASH          &kp KP_N7       &kp KP_N8         &kp KP_N9        &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
+&trans      &hr LGUI KP_MULTIPLY  &hr LALT KP_N4  &hr LSHIFT KP_N5  &hr LCTRL KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &kp K_APP
+&trans      &kp KP_N0             &kp KP_N1       &kp KP_N2         &kp KP_N3        &kp KP_DOT    &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
+                                                  &trans            &trans           &trans        &trans        &trans    &trans
             >;
         };
 
@@ -135,7 +130,7 @@ ZMK_UNICODE_SINGLE(sqrt_sign,  N2, N2, N1,  A) // Square root √
 &bootloader  &none         &none         &none         &none         &to 0         &to 0         &none         &none         &none         &none         &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
-                                         &trans        &none         &trans        &none         &trans        &trans
+                                         &trans        &none         &trans        &trans        &trans        &trans
             >;
         };
 
